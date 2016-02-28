@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/quartz/quartz.iml" filepath="$PROJECT_DIR$/quartz/quartz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/quartz-all/quartz-all.iml" filepath="$PROJECT_DIR$/quartz-all/quartz-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples/quartz-examples.iml" filepath="$PROJECT_DIR$/examples/quartz-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/quartz-jboss/quartz-jboss.iml" filepath="$PROJECT_DIR$/quartz-jboss/quartz-jboss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quartz-parent.iml" filepath="$PROJECT_DIR$/quartz-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/quartz-web/quartz-web.iml" filepath="$PROJECT_DIR$/quartz-web/quartz-web.iml" />
     </modules>
   </component>

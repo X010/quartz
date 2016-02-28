@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="quartz-examples" />
       </profile>
       <profile default="false" name="Annotation profile for quartz" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -37,27 +38,20 @@
         <processorPath useClasspath="true" />
         <module name="quartz-jboss" />
       </profile>
-      <profile default="false" name="Annotation profile for quartz-all" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="quartz-all" />
-      </profile>
       <profile default="false" name="Annotation profile for quartz-web" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="quartz-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="quartz" target="1.5" />
-      <module name="quartz-all" target="1.5" />
       <module name="quartz-examples" target="1.5" />
       <module name="quartz-jboss" target="1.5" />
       <module name="quartz-parent" target="1.5" />
-      <module name="quartz-web" target="1.5" />
+      <module name="quartz-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
