@@ -137,6 +137,7 @@
                                     <th>标识项</th>
                                     <th>键</th>
                                     <th>值</th>
+                                    <th>操作</th>
                                 </tr>
                                 <#if data??>
                                     <#list data as item>
@@ -149,6 +150,7 @@
                                             </td>
                                             <td>${item.ckey}</td>
                                             <td>${item.cvalue}</td>
+                                            <td><a class="btn btn-danger btn-xs">Delete</a></td>
                                         </tr>
                                     </#list>
                                 </#if>
@@ -159,7 +161,7 @@
                     <!-- /.box -->
 
                     <div class="box">
-                        <form method="post" action="/config.action" class="form-horizontal">
+                        <form method="post" action="config.action" class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="cflag" class="col-sm-2 control-label">Group Name</label>

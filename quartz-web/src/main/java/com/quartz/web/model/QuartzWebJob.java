@@ -48,6 +48,8 @@ public class QuartzWebJob extends BaseModel {
      */
     private Class cls;
 
+    private String clsStr;
+
     /**
      * Cron时间表达式
      */
@@ -57,6 +59,14 @@ public class QuartzWebJob extends BaseModel {
      * JOB参数
      */
     private List<QuartzParam> quartzParamList;
+
+    public String getClsStr() {
+        return clsStr;
+    }
+
+    public void setClsStr(String clsStr) {
+        this.clsStr = clsStr;
+    }
 
     public List<QuartzParam> getQuartzParamList() {
         return quartzParamList;

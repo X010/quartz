@@ -1,0 +1,107 @@
+2016-02-29 21:47:22 0    [main] INFO  org.springframework.web.context.ContextLoader:307  - Root WebApplicationContext: initialization started
+2016-02-29 21:47:22 363  [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext:573  - Refreshing Root WebApplicationContext: startup date [Mon Feb 29 21:47:22 CST 2016]; root of context hierarchy
+2016-02-29 21:47:22 404  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317  - Loading XML bean definitions from class path resource [quartz-web.xml]
+2016-02-29 21:47:23 850  [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:153  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-02-29 21:47:25 2739 [main] INFO  com.alibaba.druid.pool.DruidDataSource:669  - {dataSource-1} inited
+2016-02-29 21:47:29 6684 [main] INFO  org.quartz.core.SchedulerSignalerImpl:60  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-02-29 21:47:29 6689 [main] INFO  org.quartz.core.QuartzScheduler:220  - Quartz Scheduler v.1.7.3 created.
+2016-02-29 21:47:29 6691 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:593  - Using thread monitor-based data access locking (synchronization).
+2016-02-29 21:47:30 7771 [Timer-0] INFO  org.quartz.utils.UpdateChecker:86  - New update(s) found: 1.8.5 [http://www.terracotta.org/kit/reflector?kitID=default&pageID=QuartzChangeLog]
+2016-02-29 21:47:30 8361 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:771  - Removed 0 Volatile Trigger(s).
+2016-02-29 21:47:30 8363 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:779  - Removed 0 Volatile Job(s).
+2016-02-29 21:47:30 8554 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:58  - JobStoreTX initialized.
+2016-02-29 21:47:30 8556 [main] INFO  org.quartz.impl.StdSchedulerFactory:1240  - Quartz scheduler 'MyClusteredScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2016-02-29 21:47:30 8557 [main] INFO  org.quartz.impl.StdSchedulerFactory:1244  - Quartz scheduler version: 1.7.3
+2016-02-29 21:47:31 8748 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:825  - Freed 0 triggers from 'acquired' / 'blocked' state.
+2016-02-29 21:47:31 8880 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:835  - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2016-02-29 21:47:31 8882 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:849  - Recovery complete.
+2016-02-29 21:47:31 8945 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:856  - Removed 0 'complete' triggers.
+2016-02-29 21:47:31 9009 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:862  - Removed 0 stale fired job entries.
+2016-02-29 21:47:31 9136 [main] INFO  org.quartz.core.QuartzScheduler:472  - Scheduler MyClusteredScheduler_$_NON_CLUSTERED started.
+2016-02-29 21:47:31 9213 [main] INFO  org.springframework.web.context.ContextLoader:347  - Root WebApplicationContext: initialization completed in 9209 ms
+2016-02-29 21:48:04 42533 [MyClusteredScheduler_Worker-1] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 21:50:00 158460 [MyClusteredScheduler_Worker-2] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 21:52:00 278452 [MyClusteredScheduler_Worker-3] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 21:54:00 398468 [MyClusteredScheduler_Worker-4] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 21:56:00 518461 [MyClusteredScheduler_Worker-5] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 21:58:00 638465 [MyClusteredScheduler_Worker-6] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 22:00:00 758474 [MyClusteredScheduler_Worker-7] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 22:02:00 878454 [MyClusteredScheduler_Worker-8] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 22:04:00 998496 [MyClusteredScheduler_Worker-9] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 22:06:00 1118454 [MyClusteredScheduler_Worker-10] INFO  com.quartz.web.template.QuartzHttpTemplate:43  - execute jobname:httprequesttask
+2016-02-29 22:07:57 0    [main] INFO  org.springframework.web.context.ContextLoader:307  - Root WebApplicationContext: initialization started
+2016-02-29 22:07:57 114  [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext:573  - Refreshing Root WebApplicationContext: startup date [Mon Feb 29 22:07:57 CST 2016]; root of context hierarchy
+2016-02-29 22:07:57 149  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317  - Loading XML bean definitions from class path resource [quartz-web.xml]
+2016-02-29 22:07:58 664  [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:153  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-02-29 22:07:59 2571 [main] INFO  com.alibaba.druid.pool.DruidDataSource:669  - {dataSource-1} inited
+2016-02-29 22:08:00 2702 [main] INFO  org.quartz.core.SchedulerSignalerImpl:60  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-02-29 22:08:00 2704 [main] INFO  org.quartz.core.QuartzScheduler:220  - Quartz Scheduler v.1.7.3 created.
+2016-02-29 22:08:00 2706 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:593  - Using thread monitor-based data access locking (synchronization).
+2016-02-29 22:08:01 4327 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:771  - Removed 0 Volatile Trigger(s).
+2016-02-29 22:08:01 4328 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:779  - Removed 0 Volatile Job(s).
+2016-02-29 22:08:01 4511 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:58  - JobStoreTX initialized.
+2016-02-29 22:08:01 4512 [main] INFO  org.quartz.impl.StdSchedulerFactory:1240  - Quartz scheduler 'MyClusteredScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2016-02-29 22:08:01 4513 [main] INFO  org.quartz.impl.StdSchedulerFactory:1244  - Quartz scheduler version: 1.7.3
+2016-02-29 22:08:02 4697 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:825  - Freed 0 triggers from 'acquired' / 'blocked' state.
+2016-02-29 22:08:02 4826 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:835  - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2016-02-29 22:08:02 4827 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:849  - Recovery complete.
+2016-02-29 22:08:02 4891 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:856  - Removed 0 'complete' triggers.
+2016-02-29 22:08:02 4953 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:862  - Removed 0 stale fired job entries.
+2016-02-29 22:08:02 5074 [main] INFO  org.quartz.core.QuartzScheduler:472  - Scheduler MyClusteredScheduler_$_NON_CLUSTERED started.
+2016-02-29 22:08:02 5185 [main] INFO  org.springframework.web.context.ContextLoader:347  - Root WebApplicationContext: initialization completed in 5179 ms
+2016-02-29 22:08:05 7804 [MyClusteredScheduler_Worker-1] INFO  com.quartz.web.template.QuartzHttpTemplate:49  - execute jobname:httprequesttask
+2016-02-29 22:15:43 0    [main] INFO  org.springframework.web.context.ContextLoader:307  - Root WebApplicationContext: initialization started
+2016-02-29 22:15:43 137  [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext:573  - Refreshing Root WebApplicationContext: startup date [Mon Feb 29 22:15:43 CST 2016]; root of context hierarchy
+2016-02-29 22:15:43 215  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317  - Loading XML bean definitions from class path resource [quartz-web.xml]
+2016-02-29 22:15:44 736  [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:153  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-02-29 22:15:45 2387 [main] INFO  com.alibaba.druid.pool.DruidDataSource:669  - {dataSource-1} inited
+2016-02-29 22:15:46 2501 [main] INFO  org.quartz.core.SchedulerSignalerImpl:60  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-02-29 22:15:46 2503 [main] INFO  org.quartz.core.QuartzScheduler:220  - Quartz Scheduler v.1.7.3 created.
+2016-02-29 22:15:46 2505 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:593  - Using thread monitor-based data access locking (synchronization).
+2016-02-29 22:15:47 4229 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:771  - Removed 0 Volatile Trigger(s).
+2016-02-29 22:15:47 4230 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:779  - Removed 0 Volatile Job(s).
+2016-02-29 22:15:47 4419 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:58  - JobStoreTX initialized.
+2016-02-29 22:15:47 4420 [main] INFO  org.quartz.impl.StdSchedulerFactory:1240  - Quartz scheduler 'MyClusteredScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2016-02-29 22:15:47 4421 [main] INFO  org.quartz.impl.StdSchedulerFactory:1244  - Quartz scheduler version: 1.7.3
+2016-02-29 22:15:48 4610 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:825  - Freed 0 triggers from 'acquired' / 'blocked' state.
+2016-02-29 22:15:48 4677 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:934  - Handling 1 trigger(s) that missed their scheduled fire-time.
+2016-02-29 22:15:48 5411 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:835  - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2016-02-29 22:15:48 5413 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:849  - Recovery complete.
+2016-02-29 22:15:49 5477 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:856  - Removed 0 'complete' triggers.
+2016-02-29 22:15:49 5539 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:862  - Removed 1 stale fired job entries.
+2016-02-29 22:15:49 5675 [main] INFO  org.quartz.core.QuartzScheduler:472  - Scheduler MyClusteredScheduler_$_NON_CLUSTERED started.
+2016-02-29 22:15:49 5793 [main] INFO  org.springframework.web.context.ContextLoader:347  - Root WebApplicationContext: initialization completed in 5787 ms
+2016-02-29 22:15:54 11330 [MyClusteredScheduler_Worker-1] INFO  org.springframework.context.support.ClassPathXmlApplicationContext:573  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20cf508a: startup date [Mon Feb 29 22:15:54 CST 2016]; root of context hierarchy
+2016-02-29 22:15:54 11349 [MyClusteredScheduler_Worker-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317  - Loading XML bean definitions from class path resource [quartz-web.xml]
+2016-02-29 22:15:58 14734 [MyClusteredScheduler_Worker-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:153  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-02-29 22:16:01 18281 [MyClusteredScheduler_Worker-1] INFO  com.alibaba.druid.pool.DruidDataSource:669  - {dataSource-2} inited
+2016-02-29 22:16:03 20221 [MyClusteredScheduler_Worker-2] INFO  com.quartz.web.template.QuartzHttpTemplate:48  - execute jobname:httprequesttask
+2016-02-29 22:17:33 0    [main] INFO  org.springframework.web.context.ContextLoader:307  - Root WebApplicationContext: initialization started
+2016-02-29 22:17:33 267  [main] INFO  org.springframework.web.context.support.XmlWebApplicationContext:573  - Refreshing Root WebApplicationContext: startup date [Mon Feb 29 22:17:33 CST 2016]; root of context hierarchy
+2016-02-29 22:17:33 311  [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317  - Loading XML bean definitions from class path resource [quartz-web.xml]
+2016-02-29 22:17:33 735  [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:153  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-02-29 22:17:35 2448 [main] INFO  com.alibaba.druid.pool.DruidDataSource:669  - {dataSource-1} inited
+2016-02-29 22:17:35 2553 [main] INFO  org.quartz.core.SchedulerSignalerImpl:60  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-02-29 22:17:35 2556 [main] INFO  org.quartz.core.QuartzScheduler:220  - Quartz Scheduler v.1.7.3 created.
+2016-02-29 22:17:35 2559 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:593  - Using thread monitor-based data access locking (synchronization).
+2016-02-29 22:17:37 4223 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:771  - Removed 0 Volatile Trigger(s).
+2016-02-29 22:17:37 4224 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:779  - Removed 0 Volatile Job(s).
+2016-02-29 22:17:37 4412 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:58  - JobStoreTX initialized.
+2016-02-29 22:17:37 4412 [main] INFO  org.quartz.impl.StdSchedulerFactory:1240  - Quartz scheduler 'MyClusteredScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2016-02-29 22:17:37 4413 [main] INFO  org.quartz.impl.StdSchedulerFactory:1244  - Quartz scheduler version: 1.7.3
+2016-02-29 22:17:37 4605 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:825  - Freed 0 triggers from 'acquired' / 'blocked' state.
+2016-02-29 22:17:37 4733 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:835  - Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2016-02-29 22:17:37 4733 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:849  - Recovery complete.
+2016-02-29 22:17:37 4798 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:856  - Removed 0 'complete' triggers.
+2016-02-29 22:17:37 4861 [main] INFO  org.quartz.impl.jdbcjobstore.JobStoreTX:862  - Removed 2 stale fired job entries.
+2016-02-29 22:17:38 5044 [main] INFO  org.quartz.core.QuartzScheduler:472  - Scheduler MyClusteredScheduler_$_NON_CLUSTERED started.
+2016-02-29 22:17:38 5139 [main] INFO  org.springframework.web.context.ContextLoader:347  - Root WebApplicationContext: initialization completed in 5135 ms
+2016-02-29 22:18:03 30393 [MyClusteredScheduler_Worker-1] INFO  org.springframework.context.support.ClassPathXmlApplicationContext:573  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c95216e: startup date [Mon Feb 29 22:18:03 CST 2016]; root of context hierarchy
+2016-02-29 22:18:03 30398 [MyClusteredScheduler_Worker-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317  - Loading XML bean definitions from class path resource [quartz-web.xml]
+2016-02-29 22:18:03 30487 [MyClusteredScheduler_Worker-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor:153  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-02-29 22:18:04 31395 [MyClusteredScheduler_Worker-1] INFO  com.alibaba.druid.pool.DruidDataSource:669  - {dataSource-2} inited
+2016-02-29 22:18:04 31435 [MyClusteredScheduler_Worker-1] INFO  com.quartz.web.template.QuartzHttpTemplate:48  - execute jobname:httprequesttask
+2016-02-29 22:20:12 159290 [MyClusteredScheduler_Worker-2] INFO  com.quartz.web.template.QuartzHttpTemplate:48  - execute jobname:httprequesttask
+2016-02-29 22:22:02 269532 [MyClusteredScheduler_Worker-3] INFO  com.quartz.web.template.QuartzHttpTemplate:48  - execute jobname:httprequesttask
+2016-02-29 22:24:00 387778 [MyClusteredScheduler_Worker-4] INFO  com.quartz.web.template.QuartzHttpTemplate:48  - execute jobname:httprequesttask
+2016-02-29 22:26:00 507791 [MyClusteredScheduler_Worker-5] INFO  com.quartz.web.template.QuartzHttpTemplate:48  - execute jobname:httprequesttask

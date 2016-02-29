@@ -35,4 +35,8 @@ public class CONST {
     public static int CONFIG_TYPE_JOB = 2;
     public static int CONFIG_TYPE_TIGGER = 3;
     public static int CONFIG_TYPE_CLASS = 4;
+
+    //分页参数
+    public static int PAGE_DEFAULT_PAGE = 1;
+    public static int PAGE_DEFAULT_SIZE = 20;
 }

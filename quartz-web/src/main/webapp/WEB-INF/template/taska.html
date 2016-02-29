@@ -59,7 +59,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">退出系统</span>
+                            <span class="hidden-xs" onclick="window.location.href='loginout.action'">退出系统</span>
                         </a>
                     </li>
                     <!-- Control Sidebar Toggle Button -->
@@ -118,11 +118,12 @@
                 <!-- Horizontal Form -->
                 <div class="box box-info">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Add Task</h3>
+                        <h3 class="box-title">Add Task<span style="font-size: 12px;">  *建议使用英文字符,中文存在乱码情况</span></h3>
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
-                    <form class="form-horizontal">
+                    <form method="post" action="taska.action" class="form-horizontal">
+
                         <div class="box-body">
                             <div class="form-group">
                                 <label for="name" class="col-sm-2 control-label">JOB Name</label>
@@ -161,7 +162,7 @@
                                 <label for="classgroup" class="col-sm-2 control-label">Class</label>
 
                                 <div class="col-sm-10">
-                                    <select id="classgroup" name="classgroup" class="form-control">
+                                    <select id="classgroup" onchange="changePackageClass()" name="classgroup" class="form-control">
                                         <#if classs??>
                                             <#list classs as class>
                                                 <option value="${class.cvalue}">${class.ckey}</option>
@@ -177,12 +178,7 @@
                                     <input type="text" class="form-control" name="cron" id="cron" placeholder="cron时间表达式">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="param" class="col-sm-2 control-label">param</label>
-
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="param" id="param" placeholder="参数">
-                                </div>
+                            <div id="params">
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -245,5 +241,36 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+<script language="JavaScript">
+    /**
+     * 获取该JOBCLass所需要参数
+     */
+    function changePackageClass() {
+        var classStr = $("#classgroup").val();
+        $.ajax({
+            url: "param.action?templateclass=" + classStr,
+            type: "GET",
+            timeout: 30000,
+            success: function (data, textStatus) {
+                var jsonData = $.parseJSON(data);
+                if (jsonData != null && jsonData.length >= 0) {
+                    $("#params").empty();
+                    for (var i = 0; i < jsonData.length; i++) {
+                        var str = "<div class='form-group'>";
+                        str += "<label for='" + jsonData[i] + "' class='col-sm-2 control-label'>" + jsonData[i] + "</label>";
+                        str += " <div class='col-sm-10'>";
+                        str += " <input type='text' class='form-control' name='" + jsonData[i] + "' id='" + jsonData[i] + "' placeholder='参数'>";
+                        str += "</div>";
+                        str += "</div>";
+                        $("#params").append(str);
+                    }
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+            }
+        });
+    }
+</script>
 </body>
 </html>

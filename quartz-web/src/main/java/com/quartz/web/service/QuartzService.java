@@ -1,6 +1,7 @@
 package com.quartz.web.service;
 
 import com.quartz.web.model.PageInfo;
+import com.quartz.web.model.PageRead;
 import com.quartz.web.model.QuartzConfig;
 import com.quartz.web.model.QuartzWebJob;
 
@@ -39,6 +40,13 @@ public interface QuartzService {
      */
     public void saveQuartzWebJob(QuartzWebJob quartzWebJob);
 
+    /**
+     * 删除QuartzWebJob对象
+     *
+     * @param jobName
+     */
+    public void deletQuartzWebJob(String jobName);
+
 
     /**
      * 获取系统配置项
@@ -62,6 +70,21 @@ public interface QuartzService {
      *
      * @return
      */
-    public List<QuartzWebJob> findQuartzWebJob(PageInfo pageInfo);
+    public PageRead<QuartzWebJob> findQuartzWebJob(PageInfo pageInfo);
 
+    /**
+     * 删除配置项
+     *
+     * @param id
+     */
+    public void deleteConfig(long id);
+
+
+    /**
+     * 根据用户名与密码获取对象
+     * @param username
+     * @param password
+     * @return
+     */
+    public QuartzConfig findUsernameAndPassword(String username,String password);
 }

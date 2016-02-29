@@ -59,7 +59,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">退出系统</span>
+                            <span class="hidden-xs" onclick="window.location.href='loginout.action'">退出系统</span>
                         </a>
                     </li>
                     <!-- Control Sidebar Toggle Button -->
@@ -150,7 +150,7 @@
                                             </td>
                                             <td>${item.ckey}</td>
                                             <td>${item.cvalue}</td>
-                                            <td><a class="btn btn-danger btn-xs">Delete</a></td>
+                                            <td><a class="btn btn-danger btn-xs" href="deleteconfig.action?id=${item.id}">delete</a></td>
                                         </tr>
                                     </#list>
                                 </#if>
@@ -161,7 +161,7 @@
                     <!-- /.box -->
 
                     <div class="box">
-                        <form method="post" action="/config.action" class="form-horizontal">
+                        <form method="post" action="config.action" class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="cflag" class="col-sm-2 control-label">Group Name</label>

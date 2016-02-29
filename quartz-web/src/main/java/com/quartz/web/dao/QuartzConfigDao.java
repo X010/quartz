@@ -1,6 +1,7 @@
 package com.quartz.web.dao;
 
 import com.quartz.web.model.QuartzConfig;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -35,6 +36,14 @@ public interface QuartzConfigDao {
     public void insertQuartzConfig(QuartzConfig config);
 
     /**
+     * 删除配置项
+     *
+     * @param id
+     */
+    @Delete("delete from QUARTZ_CONFIG where id=#{id}")
+    public void deleteConfig(@Param("id") long id);
+
+    /**
      * 获取所有配置对象
      *
      * @return
@@ -45,9 +54,22 @@ public interface QuartzConfigDao {
 
     /**
      * 根据CFLAG获取配置对象
+     *
      * @param cflag
      * @return
      */
     @Select("select * from QUARTZ_CONFIG where cflag=#{cflag}")
     public List<QuartzConfig> findQuartzConfigByCFlag(@Param("cflag") int cflag);
+
+
+    /**
+     * 根据属性获取唯一的对象
+     *
+     * @param ckey
+     * @param cvalue
+     * @param cflag
+     * @return
+     */
+    @Select("select * from QUARTZ_CONFIG where cflag=#{cflag} and ckey=#{ckey} and cvalue=#{cvalue} limit 1")
+    public QuartzConfig findQuartzByProperty(@Param("ckey") String ckey, @Param("cvalue") String cvalue, @Param("cflag") int cflag);
 }

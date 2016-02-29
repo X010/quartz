@@ -59,7 +59,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">退出系统</span>
+                            <span class="hidden-xs" onclick="window.location.href='loginout.action'">退出系统</span>
                         </a>
                     </li>
                     <!-- Control Sidebar Toggle Button -->
@@ -136,43 +136,28 @@
                                 <tr>
                                     <th>JOB名称</th>
                                     <th>组名</th>
-                                    <th>触发器名</th>
+                                    <!--<th>触发器名</th>-->
                                     <th>触发器组名</th>
                                     <th>任务</th>
                                     <th>Cron时间表达式</th>
+                                    <th>操作</th>
                                 </tr>
-                                <tr>
-                                    <td>183</td>
-                                    <td>John Doe</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="label label-success">Approved</span></td>
-                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>219</td>
-                                    <td>Alexander Pierce</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="label label-warning">Pending</span></td>
-                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>657</td>
-                                    <td>Bob Doe</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="label label-primary">Approved</span></td>
-                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>175</td>
-                                    <td>Mike Doe</td>
-                                    <td>11-7-2014</td>
-                                    <td><span class="label label-danger">Denied</span></td>
-                                    <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                    <td></td>
-                                </tr>
+                                <#if data??>
+                                    <#list data as item>
+                                        <tr>
+                                            <td>${item.jobName}</td>
+                                            <td>${item.jobGroupName}</td>
+                                            <!-- <td>${item.triggerName}</td>-->
+                                            <td>${item.triggerGroupName}</td>
+                                            <td>${item.clsStr}</td>
+                                            <td>${item.time}</td>
+                                            <td>
+                                                <a class="btn btn-primary btn-xs">detail</a>
+                                                <a class="btn btn-danger btn-xs" href="deletejob.action?jobname=${item.jobName}">delete</a>
+                                            </td>
+                                        </tr>
+                                    </#list>
+                                </#if>
                             </table>
                         </div>
                         <!-- /.box-body -->
@@ -182,15 +167,15 @@
             </div>
         </section>
         <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> beta
     </div>
-    <strong>Copyright &copy; 2016-2017 <a href="#">Quartz Task Studio</a>.</strong> All rights
-    reserved.
-</footer>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> beta
+        </div>
+        <strong>Copyright &copy; 2016-2017 <a href="#">Quartz Task Studio</a>.</strong> All rights
+        reserved.
+    </footer>
 </div>
 <!-- ./wrapper -->
 

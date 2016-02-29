@@ -36,9 +36,18 @@ public interface QuartzParamDao {
 
     /**
      * 根据JOBName读取QuartzParam
+     *
      * @param jobname
      * @return
      */
     @Select("select * from QUARTZ_PARAM where jobname=#{jobname}")
     public List<QuartzParam> findQuartzParam(@Param("jobname") String jobname);
+
+    /**
+     * 删除JobName数据
+     *
+     * @param jobname
+     */
+    @Select("delete from  QUARTZ_PARAM where jobname=#{jobname}")
+    public void deleteQuartzByJobName(@Param("jobname") String jobname);
 }
